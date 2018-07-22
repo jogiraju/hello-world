@@ -1,0 +1,24 @@
+Node express is used to create a node server. 
+This is a CRUD application created using restful api 
+developed using javascript for mysql database backend.
+
+demo is the mysql database holding the tasks table.
+tasks -> id, title, status (taskid, task, and task_status [pending or done])
+
+The api can be tested using POSTMAN:
+
+GET request on http://localhost:3000/tasks 
+Gives a list of tasks
+
+POST request on http://localhost:3000/tasks 
+with json file with fields title and status filled with some data
+creates a task. Id gets automatically added.
+
+PUT request on http://localhost:3000/tasks/id 
+with json file with fields title and status filled with some data
+updates a task with the given Id.
+
+Finally, 
+DELETE request on http://localhost:3000/tasks/id 
+deletes a task with the given id.
+
